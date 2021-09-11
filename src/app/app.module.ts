@@ -9,6 +9,7 @@ import {FormsModule} from '@angular/forms';
 import {AboutComponent} from './components/about/about.component';
 import {AdminComponent} from './components/admin/admin.component';
 import {UserComponent} from './components/user/user.component';
+import { FirstComponent } from './components/first/first.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import {UserComponent} from './components/user/user.component';
     AboutComponent,
     AdminComponent,
     UserComponent,
+    FirstComponent,
 
 
   ],
