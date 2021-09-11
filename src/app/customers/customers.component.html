@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class=" col-md-6" >
+      <div class="card" *ngFor="let model of models">
+        <div class="card-body">
+          <h2 class="card-title">{{model.title}}</h2>
+          <p class="card-text">{{model.description}}</p>
+        </div>
+      </div>
+    </div>
+    <div class=" col-md-6">gg</div>
+  </div>
+</div>
+
+
+<br>
+<p *ngIf="isCorrect; else cond">view ngif</p>
+<ng-template #cond>!view ngif</ng-template>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <p *ngFor=" let user of users">{{user.title}}</p>
+      <p *ngFor=" let user of users">{{user.description}}</p>
+    </div>
+    <div class="col-md-6">
+      <button [routerLink]="'shop'">ok</button>
+    </div>
+  </div>
+</div>
